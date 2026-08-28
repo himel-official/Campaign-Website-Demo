@@ -92,8 +92,8 @@ a {
 .hero {
   background:
     linear-gradient(180deg, rgba(13, 42, 32, 0.72) 0%, rgba(17, 56, 39, 0.82) 100%),
-    url("/hero-bg.png") center / cover no-repeat;
-  background-color: var(--bg-band); /* fallback shown until the image loads, or if it's missing */
+    url("/hero-bg1.png") center / cover no-repeat;
+  background-color: var(--bg-band);
   color: var(--ink-invert);
   padding: 56px 24px 110px;
   text-align: center;
