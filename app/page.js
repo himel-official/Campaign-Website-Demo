@@ -31,7 +31,7 @@ const COPY = {
   nameLabel: "Full name",
   namePlaceholder: "e.g. Himel Mahmud",
   phoneLabel: "Mobile number",
-  phonePlaceholder: "01518907160",
+  phonePlaceholder: "e.g. 01518907160",
   codeLabel: "Campaign code",
   codeHint: "10 digits",
   submitLabel: "Verify code",
