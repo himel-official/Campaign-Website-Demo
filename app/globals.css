@@ -1,6 +1,6 @@
 :root {
   --bg-page: #f6f8f6;
-  --bg-band: #0d2a20;
+  --bg-band: #abddcb;
   --bg-band-soft: #113827;
   --ink: #10221b;
   --ink-soft: #5c6b62;
@@ -90,10 +90,6 @@ a {
 
 /* ---------- hero band ---------- */
 .hero {
-  /* To use your own photo: drop an image file into the /public folder
-     (e.g. public/hero-bg.jpg) and set its filename below. The dark
-     gradient on top keeps the white headline text readable over any
-     photo — adjust the 0.55 opacity values to make it lighter/darker. */
   background:
     linear-gradient(180deg, rgba(13, 42, 32, 0.72) 0%, rgba(17, 56, 39, 0.82) 100%),
     url("/hero-bg.png") center / cover no-repeat;
