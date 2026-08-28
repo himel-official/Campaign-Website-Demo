@@ -19,11 +19,11 @@ const COPY = {
     },
     {
       title: "We verify it",
-      desc: "Each code can only be redeemed once, ever.",
+      desc: "Each code or mobile numbers can be used only once, ever.",
     },
     {
       title: "Get your SMS",
-      desc: "A confirmation text is sent to your number.",
+      desc: "A confirmation text will be sent to your number.",
     },
   ],
 
@@ -38,7 +38,7 @@ const COPY = {
   submittingLabel: "Verifying...",
 
   footerNote:
-    "Each code can be used only once. Contact the campaign helpline 01518907160 if you run into any issues.\nDeveloped by Himel Mahmud ♞",
+    "Each code can be used only once. Contact the campaign helpline 01518907160 if you run into any issues.\n\nDeveloped by Himel Mahmud ♞",
   incompleteCodeTitle: "Code incomplete",
   incompleteCodeDetail: "Please enter the full 10-digit code.",
   verifyFailedTitle: "Verification failed",
