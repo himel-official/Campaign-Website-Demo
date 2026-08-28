@@ -38,7 +38,7 @@ const COPY = {
   submittingLabel: "Verifying...",
 
   footerNote:
-    "Each code can be used only once. Contact the campaign helpline if you run into any issues.Developed by Himel Mahmud ♞",
+    "Each code can be used only once. Contact the campaign helpline 01518907160 if you run into any issues.\nDeveloped by Himel Mahmud ♞",
   incompleteCodeTitle: "Code incomplete",
   incompleteCodeDetail: "Please enter the full 10-digit code.",
   verifyFailedTitle: "Verification failed",
