@@ -4,12 +4,8 @@ import { useRef, useState } from "react";
 
 const CODE_LENGTH = 10;
 
-// ────────────────────────────────────────────────────────────────
-// ALL PAGE TEXT LIVES HERE. Edit these values to change any wording
-// on the page — nothing else in this file needs to change.
-// ────────────────────────────────────────────────────────────────
 const COPY = {
-  brandName: "Campaign 2026",
+  brandName: "Details Business Solution Campaign 2026",
   headerTag: "Code Redemption",
 
   heroHeadline: "Verify Your Campaign Code",
@@ -33,18 +29,16 @@ const COPY = {
 
   ticketHeading: "Redeem your code",
   nameLabel: "Full name",
-  namePlaceholder: "e.g. John Doe",
+  namePlaceholder: "e.g. Himel Mahmud",
   phoneLabel: "Mobile number",
-  phonePlaceholder: "01XXXXXXXXX",
+  phonePlaceholder: "01518907160",
   codeLabel: "Campaign code",
   codeHint: "10 digits",
   submitLabel: "Verify code",
   submittingLabel: "Verifying...",
 
   footerNote:
-    "Each code can be used only once. Contact the campaign helpline if you run into any issues.",
-
-  // Status messages shown after submitting
+    "Each code can be used only once. Contact the campaign helpline if you run into any issues.Developed by Himel Mahmud ♞",
   incompleteCodeTitle: "Code incomplete",
   incompleteCodeDetail: "Please enter the full 10-digit code.",
   verifyFailedTitle: "Verification failed",
@@ -56,7 +50,6 @@ const COPY = {
   connectionErrorTitle: "Couldn't reach the server",
   connectionErrorDetail: "Check your internet connection and try again.",
 };
-// ────────────────────────────────────────────────────────────────
 
 export default function Home() {
   const [name, setName] = useState("");
