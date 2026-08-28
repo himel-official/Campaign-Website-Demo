@@ -136,7 +136,7 @@ export default function Home() {
     <>
       <header className="site-header">
         <div className="brand">
-          <span className="brand-mark">C</span>
+          <span className="brand-mark">DBS</span>
           {COPY.brandName}
         </div>
         <span className="header-tag">{COPY.headerTag}</span>
