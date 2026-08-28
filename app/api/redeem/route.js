@@ -43,11 +43,6 @@ export async function POST(req) {
       { status: 500 }
     );
   }
-
-  // Atomically claim the code: only succeeds if a row with this code
-  // exists AND is_used is still false. This update+filter is atomic at
-  // the database level, so two people racing on the same code can't
-  // both "win" it.
   const { data, error } = await supabase
     .from("codes")
     .update({
@@ -61,8 +56,6 @@ export async function POST(req) {
     .maybeSingle();
 
   if (error) {
-    // Postgres unique_violation — this phone number already redeemed a
-    // different code (used_by_phone has a UNIQUE constraint in the DB).
     if (error.code === "23505") {
       return NextResponse.json(
         { ok: false, error: "This mobile number has already been used to redeem a code" },
@@ -74,7 +67,6 @@ export async function POST(req) {
   }
 
   if (!data) {
-    // Either the code doesn't exist, or it was already used.
     return NextResponse.json(
       { ok: false, error: "This code is invalid or has already been used" },
       { status: 409 }
@@ -85,9 +77,6 @@ export async function POST(req) {
     const message = buildRedeemMessage({ name });
     await sendSms(phone, message);
   } catch (smsErr) {
-    // The code is already marked used in the DB at this point. We don't
-    // roll that back — the redemption itself succeeded — but we surface
-    // the SMS failure so you notice it (e.g. in Vercel logs / the response).
     console.error("SMS send failed:", smsErr);
     return NextResponse.json(
       {
